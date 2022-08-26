@@ -11,6 +11,24 @@ body {
 	line-height: 150%;
 }
 
+#MAP{
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#map{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#NEWS{
+	margin-top: 60px;
+}
+
+#CONTACT{
+	margin-top: 60px;
+}
 
 /* -------------------- wrapper -------------------- */
 #wrapper {
@@ -40,7 +58,7 @@ body {
 
 /* -------------------- footer -------------------- */
 #footer{
-    width: 100%
+    width: 100%;
 }
 
 #footer {
@@ -48,10 +66,14 @@ body {
 	width: 100%;
 	height: auto;
 	background: #000000;
+	text-align:center;
 	color: #FFF;
 	font-weight: bold;
-	text-align: center;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -181,7 +203,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 960px) {
 
 			html {
 				font-size: 11pt;
@@ -189,7 +211,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 360px) {
+		@media screen and (max-width: 520px) {
 
 			html {
 				font-size: 10pt;
@@ -1691,10 +1713,20 @@ input, select, textarea {
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
-			font-size: 0.6rem;
+			font-size: 0.5rem;
 			opacity: 0.75;
 			margin-bottom: 0;
 			text-transform: uppercase;
+		}
+		
+		#footer a{
+			text-align: center;
+			font-size: 18px;
+		}
+		
+		#footer p{
+			text-align: center;
+			font-size: 18px;
 		}
 
 		body.is-article-visible #footer {
@@ -1779,7 +1811,7 @@ ul {
 
 li {
    margin: 0 0 0 15px;
-   font-size: 24px;
+   font-size: 25px;
 }
 
 ul {
@@ -1812,7 +1844,7 @@ body {
 
 div > span {
   opacity: 0.15;
-  font-size: 50px;
+  font-size: 100px;
 }
 #A {
   opacity: 1;
@@ -2499,12 +2531,19 @@ dd{
    background-color: #00000000;
    display: flex;
    align-items: center;
+   text-align: center;
 }
 a {	
    color: #fff;
+   text-align: center;
+}
+p {	
+   color: #fff;
+   text-align: center;
 }
 .h1 a {
   text-decoration: none;
+  text-align: center;
 }
 
 
@@ -2533,5 +2572,21 @@ font-weight: bold; /*装飾*/
     p {
       margin-bottom: 25px;
     }
-  }
+
+
+.amy-map-container-outer-box {
+   text-align: center;
+   margin: 0 auto;
+}
+
+
+.contact{
+	display:block;
+	margin:0 auto;
+	max-width: 100%;
+}
+
+#iframe{
+width:100%;
+height:100%;
 }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+
+<div class="contact-form">
+  <p class="title">お問い合わせ</p>
+  
+  <form action="https://api.staticforms.xyz/submit"method="post">
+    <input type="hidden" name="accessKey" value="47131b66-3b64-4ef3-8bf1-92197277127f">
+    <!--required-->
+  <div class="item">
+  <label class="label">お名前</label>
+  <input type="text"class="input"name="name"font color=white;/>
+  </div>
+  <div class="item">
+  <label class="label">メールアドレス</label>
+  <input type="email"class="input"name="email"required/>
+  </div>
+  <div class="item">
+  <label class="label">本文</label>
+  <textarea class="input"placeholder="ご記入はこちら"></textarea>
+  </div>
+  <div class="button-area">
+      <input type="submit"value="送信"/>
+      <input type="reset"value="リセット"/>
+  </div>
+  
+</form>
+</body>
+</html>

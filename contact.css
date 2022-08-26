@@ -20,15 +20,15 @@ body{
 }
 
 .title{
-  text-align: left; 
-  font-size: 20px;
+  text-align: center; 
+  font-size: 40px;
   margin-bottom: 20px;
   font-weight:bold;
   color: white;
 }
 
 form{
-  width: 460px;
+  width: 510px;
   margin: 0 auto;
 }
 
@@ -46,7 +46,7 @@ label{
 
 .input{
   float: left;
-  width:300px;
+  width:500px;
 }
 
 textarea{

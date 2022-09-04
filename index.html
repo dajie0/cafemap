@@ -15,8 +15,22 @@
             div {
               margin-right: 100px;
             }
-        </style>
-      </hed>
+            
+    .pagetop {
+      display: none;
+
+      padding: 40px 10px;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 50%;
+
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+    }
+  </style>
+      </head>
       
       <body style="margin:0;margin-left:0;'>
 
@@ -34,11 +48,14 @@
                  </ul>
                  </nav>
             </header>
+            
         
          <div id="head">
          <a name hidden="head">head</a>
              <h1><a href><video autoplay playsinline src="video/header.mp4"width”＝”auto”max-width: 00px; controls muted autoplay playsinline loop playsinline alt="画像"/></video></a></h1>
          </div>
+         
+         <a class="pagetop" id="top" href="#head">TOPへ</a>
          
          <div id="MAP">
          <a name hidden="MAP">MAP</a>
@@ -57,14 +74,14 @@
 </div>
 
 <dl>
-  <dt>2022.8.28</dt>
-  <dd>[MAP] 渋谷・Ash-ae追加</dd>
-  <dt>2022.8.27</dt>
-  <dd>[MAP] 人形町・ATELIER MATCHA追加</dd>
-  <dt>2022.8.25</dt>
-  <dd>[MAP] 池袋・梟書茶房追加</dd>
-  <dt>2022.8.23</dt>
-  <dd>[MAP] 赤羽・豆電珈琲追加</dd>
+  <dt>2022.９.１</dt>
+  <dd>【MAP】渋谷・Ash-ae追加</dd>
+  <dt>2022.9.1</dt>
+  <dd>【MAP】人形町・ATELIER MATCHA追加</dd>
+  <dt>2022.8.30</dt>
+  <dd>【MAP】池袋・梟書茶房追加</dd>
+  <dt>2022.8.30</dt>
+  <dd>【MAP】赤羽・豆電珈琲追加</dd>
 </dl>
 
 <div id="CONTACT">
@@ -85,5 +102,23 @@
       <td style="border:none;"><p>&copy; 2022 SHARE CAFE All Rights Reserved.</p></td>
     </tr>
         </div>
+        
+    <script>
+    const topLink = document.getElementById("top");
+    window.addEventListener("scroll", () => {
+    const scrollValue = document.scrollingElement.scrollTop;
+
+      if (scrollValue >= 250) {
+
+          topLink.style.display = "inline";
+
+      } else if (scrollValue < 250) {
+
+          topLink.style.display = "none";
+
+      }
+    });
+
+    </script>
     </body>
 </html> 

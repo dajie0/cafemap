@@ -22,6 +22,17 @@ body {
 	margin-right: auto;
 }
 
+#SNS{
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#SNS{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #NEWS{
 	margin-top: 60px;
 }
@@ -2620,4 +2631,5 @@ height: 130% !important;
       bottom: 10px;
       right: 10px;
     }
+
 

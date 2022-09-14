@@ -7,8 +7,15 @@
         <meta charset="UTF-8">
         <title>cafemap</title>
         <link rel="stylesheet" href="stylesheet3.css">
+        <link rel="manifest" href="/manifest.json">
         <body style="background-color:black;">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        if('serviceWorker' in navigator){
+	navigator.serviceWorker.register('/serviceworker.js').then(function(){
+		console.log("Service Worker is registered!!");
+	});
+}
      
      <style>
             #sort {
